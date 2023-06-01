@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Input Field Filler",
+  "version": "1.0",
+  "description": "Automatically fills input fields on specified websites.",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  }
+}
